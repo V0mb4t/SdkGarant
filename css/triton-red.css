@@ -1,0 +1,92 @@
+/* Определяем новый цвет */
+:root {
+    --base-color: #8B0000;
+    --sub-color:  #800000;
+    --base-anim: .2s ease
+  }
+  
+  /* Переопределяем переменные темы */
+  .x-panel-header-default,
+  .x-tab-bar-default,
+  .x-window-header-default .x-tool-img,
+  .x-menu-item-default.x-menu-item-active {
+    background-color: var(--base-color);
+  }
+
+  .x-window-body-default,
+  .x-form-trigger-wrap-default.x-form-trigger-wrap-focus,
+  .x-grid-item-focused .x-grid-cell-inner::before,
+  .x-column-header.x-column-header-focus .x-column-header-inner::after  {
+    border-color: var(--base-color);
+  }
+
+  .x-form-checkbox-focus.x-form-checkbox-default,
+  .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: var(--sub-color);
+  }
+
+  .x-tab-focus.x-tab-default {
+    outline: 1px solid var(--sub-color);
+  }
+
+  .x-window-default {
+    border-color: var(--base-color);
+  }
+
+  .x-btn-default-small {
+    border-color: var(--base-color);
+    background-color: var(--base-color);
+  }
+
+  .x-btn-over.x-btn-default-small {
+    border-color: var(--sub-color);
+    background-color: var(--sub-color);
+  } 
+
+  .x-btn-focus.x-btn-default-toolbar-small,
+  .x-btn-focus.x-btn-over.x-btn-default-toolbar-small,
+  .x-btn-focus.x-btn-pressed.x-btn-default-toolbar-small {
+    box-shadow: var(--base-color) 0 1px 0px 0 inset, var(--base-color) 0 -1px 0px 0 inset, var(--base-color) -1px 0 0px 0 inset, var(--base-color) 1px 0 0px 0 inset;
+  }
+
+  .x-btn.x-btn-pressed.x-btn-default-small {
+    transform: scale(0.9);
+    transition: var(--base-anim);
+  }
+
+  .x-btn.x-btn-pressed.x-btn-default-small,
+  .x-btn-focus.x-btn-default-small {
+    border-color: var(--sub-color);
+    background-color: var(--sub-color);
+  }
+  .x-panel-header-title-default {
+    color: #ffffff;
+  }
+  .x-panel-header-tools-default > .x-tool {
+    color: #ffffff;
+  }
+  .x-tab-default .x-tab-bar-default {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+  }
+  .x-tab-default .x-tab-bar-default .x-tab-bar-strip-default {
+    background-color: var(--base-color);
+  }
+  .x-btn-default-toolbar-small-default,
+  .x-btn-default-toolbar-medium-default,
+  .x-btn-default-toolbar-large-default {
+    background-color: var(--base-color);
+    background-image: none;
+    border-color: var(--base-color);
+    color: #ffffff;
+  }
+  .x-grid-header-default {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+    color: #ffffff;
+  }
+  .x-window-header-default {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+    color: #ffffff;
+  }

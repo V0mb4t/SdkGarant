@@ -1,0 +1,13 @@
+html {
+    overflow: hidden;
+}
+
+.green-cell {
+  background-color: green;
+  color: white;
+}
+
+.x-form-cb-default {
+  margin-top: 9px;
+  margin-left: 5px;
+}
